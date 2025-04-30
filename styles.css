@@ -1,0 +1,112 @@
+body {
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 30px;
+  }
+  
+  .instagram-post {
+    width: 400px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+  
+  .html5 {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .username {
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+  }
+  
+  .options {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .post-image img {
+    width: 100%;
+    display: block;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .left-icons i,
+  .right-icon i {
+    font-size: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .right-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-likes,
+  .post-caption,
+  .view-comments,
+  .post-time {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  
+  .post-likes {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .post-caption .username {
+    font-weight: bold;
+    margin-right: 5px;
+    color:black;
+  }
+  
+  .view-comments {
+    color: Black;
+    cursor: pointer;
+  }
+  
+  .post-time {
+    color: gray;
+    font-size: 11px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
