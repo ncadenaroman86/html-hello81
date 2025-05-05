@@ -1,112 +1,75 @@
+/* Page background and global settings */
 body {
-    background-color: #fafafa;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 30px;
-  }
-  
-  .instagram-post {
-    width: 400px;
-    background-color: white;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .post-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-  }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .profile-pic {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .user-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-  }
-  
-  .html5 {
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .username {
-    font-weight: normal;
-    font-size: 16px;
-    color: black;
-  }
-  
-  .options {
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .post-image img {
-    width: 100%;
-    display: block;
-  }
-  
-  .post-actions {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
-  .left-icons i,
-  .right-icon i {
-    font-size: 22px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .right-icon {
-    display: flex;
-    align-items: center;
-  }
-  
-  .post-likes,
-  .post-caption,
-  .view-comments,
-  .post-time {
-    padding: 0 10px;
-    font-size: 14px;
-  }
-  
-  .post-likes {
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  
-  .post-caption .username {
-    font-weight: bold;
-    margin-right: 5px;
-    color:black;
-  }
-  
-  .view-comments {
-    color: Black;
-    cursor: pointer;
-  }
-  
-  .post-time {
-    color: gray;
-    font-size: 11px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black page background */
+  color: #000; /* Text color inside the post remains black */
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Instagram post container */
+.instagram-post {
+  width: 400px;
+  background: #fff; /* White post */
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Subtle glow on black bg */
+}
+
+/* Header section */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Profile section inside header */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Smaller subtext like username */
+.subtext {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Post image */
+.post-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Action icons (like, comment, share, bookmark) */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.left-icons i {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Likes and caption section */
+.post-likes,
+.post-caption {
+  padding: 0 10px 10px;
+  font-size: 14px;
+  color: #000;
+}
